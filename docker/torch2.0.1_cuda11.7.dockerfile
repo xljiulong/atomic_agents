@@ -3,7 +3,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 LABEL maintainer="zhangjl19@spdb.com.cn"
 LABEL version = "torch2.0.1_cuda11.7"
-LABEL description = "torch2.0.1_cuda11.7-runtime for llm-step-by-step environments"
+LABEL description = "torch2.0.1_cuda11.7-runtime for atomic agent environments"
 
 WORKDIR /workspace
 COPY requirements.txt /tmp/requirements.txt

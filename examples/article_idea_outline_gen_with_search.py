@@ -7,6 +7,9 @@ This can be useful if you only want to include the latest search results to save
 
 from datetime import datetime
 import os
+import sys
+cur_path = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(cur_path, '../'))
 from rich.console import Console
 from atomic_agents.lib.components.chat_memory import ChatMemory
 from atomic_agents.agents.base_chat_agent import BaseChatAgent
